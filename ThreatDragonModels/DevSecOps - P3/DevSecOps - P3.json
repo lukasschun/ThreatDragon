@@ -33,8 +33,8 @@
                 "text": "Externer Service für \nTelefonnummernauflösung (Telco)"
               }
             },
-            "id": "b912fafb-3a4e-4a34-90d4-7b1572a57498",
             "zIndex": -1,
+            "id": "b912fafb-3a4e-4a34-90d4-7b1572a57498",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Externer Service für \nTelefonnummernauflösung (Telco)",
@@ -1196,6 +1196,9 @@
               "threats": []
             },
             "id": "b3b440d0-632e-4d9a-b933-c19873566c7b",
+            "labels": [
+              "Signierte Daten"
+            ],
             "source": {
               "cell": "0e171091-207d-48a1-a019-487edc52682a"
             },
@@ -1207,9 +1210,6 @@
                 "x": 610,
                 "y": -230
               }
-            ],
-            "labels": [
-              "Signierte Daten"
             ]
           },
           {
@@ -1244,6 +1244,9 @@
               "threats": []
             },
             "id": "216b48f0-a0a5-4680-8e38-92c199e0b090",
+            "labels": [
+              "Raw Data"
+            ],
             "source": {
               "cell": "859de24f-ef56-4269-a51e-d626ea8130d5"
             },
@@ -1259,9 +1262,6 @@
                 "x": 670,
                 "y": -230
               }
-            ],
-            "labels": [
-              "Raw Data"
             ]
           },
           {
@@ -1296,6 +1296,9 @@
               "threats": []
             },
             "id": "ee61205c-f379-4bcb-85cf-cb4f6a5021b5",
+            "labels": [
+              "Siem Report Data"
+            ],
             "source": {
               "cell": "6b9c739a-c52b-48c0-b120-f84334d77b3e"
             },
@@ -1311,9 +1314,6 @@
                 "x": 820,
                 "y": -250
               }
-            ],
-            "labels": [
-              "Siem Report Data"
             ]
           },
           {
@@ -1348,6 +1348,9 @@
               "threats": []
             },
             "id": "40f26dfa-b8bf-476f-8e98-37c13648492e",
+            "labels": [
+              "Report Data"
+            ],
             "source": {
               "cell": "c2716661-ef88-48a8-8d0f-724e1923d562"
             },
@@ -1363,9 +1366,6 @@
                 "x": 380,
                 "y": -250
               }
-            ],
-            "labels": [
-              "Report Data"
             ]
           },
           {
@@ -1400,6 +1400,9 @@
               "threats": []
             },
             "id": "11fb22e8-f7cd-437e-a7ee-4a897cd4eaaa",
+            "labels": [
+              "2. Weiterleitung\nTelefonnummer"
+            ],
             "source": {
               "cell": "0e171091-207d-48a1-a019-487edc52682a"
             },
@@ -1423,9 +1426,6 @@
                 "x": 1290,
                 "y": -50
               }
-            ],
-            "labels": [
-              "2. Weiterleitung\nTelefonnummer"
             ]
           },
           {
@@ -1811,8 +1811,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "0e171091-207d-48a1-a019-487edc52682a",
             "zIndex": 14,
+            "id": "0e171091-207d-48a1-a019-487edc52682a",
             "data": {
               "type": "tm.Flow",
               "name": "Kryptografie",
@@ -1858,13 +1858,13 @@
             },
             "visible": true,
             "shape": "td-text-block",
+            "zIndex": 16,
             "id": "7f377531-057b-49c4-8768-69d689586ab9",
             "data": {
               "type": "tm.Text",
               "name": "2. Weiterleitung\nTelefonnummer",
               "hasOpenThreats": false
-            },
-            "zIndex": 16
+            }
           },
           {
             "position": {
@@ -1887,8 +1887,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "859de24f-ef56-4269-a51e-d626ea8130d5",
             "zIndex": 17,
+            "id": "859de24f-ef56-4269-a51e-d626ea8130d5",
             "data": {
               "type": "tm.Flow",
               "name": "Export Service",
@@ -1939,8 +1939,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "89ef6e10-601c-4a86-a5c0-eb65bf66a985",
             "zIndex": 21,
+            "id": "89ef6e10-601c-4a86-a5c0-eb65bf66a985",
             "data": {
               "type": "tm.Flow",
               "name": "Management",
@@ -1972,8 +1972,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "ee99068b-ceba-4236-99fc-6373840dfc58",
             "zIndex": 22,
+            "id": "ee99068b-ceba-4236-99fc-6373840dfc58",
             "data": {
               "type": "tm.Text",
               "name": "Mail Report",
@@ -2001,8 +2001,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "4d14c576-5d0e-4e0c-84d1-2d741745aaa7",
             "zIndex": 23,
+            "id": "4d14c576-5d0e-4e0c-84d1-2d741745aaa7",
             "data": {
               "type": "tm.Process",
               "name": "SIEM",
@@ -2054,8 +2054,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "6b9c739a-c52b-48c0-b120-f84334d77b3e",
             "zIndex": 24,
+            "id": "6b9c739a-c52b-48c0-b120-f84334d77b3e",
             "data": {
               "type": "tm.Flow",
               "name": "Siem Daten",
