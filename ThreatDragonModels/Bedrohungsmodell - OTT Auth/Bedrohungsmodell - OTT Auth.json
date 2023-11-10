@@ -1160,63 +1160,6 @@
               "hasOpenThreats": false,
               "threats": []
             },
-            "id": "11fb22e8-f7cd-437e-a7ee-4a897cd4eaaa",
-            "source": {
-              "cell": "0e171091-207d-48a1-a019-487edc52682a"
-            },
-            "target": {
-              "cell": "ebc88767-2bed-409f-b854-efadec206ba8"
-            },
-            "vertices": [
-              {
-                "x": 880,
-                "y": -114
-              },
-              {
-                "x": 1050,
-                "y": -114
-              },
-              {
-                "x": 1100,
-                "y": -90
-              },
-              {
-                "x": 1290,
-                "y": -50
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": []
-            },
             "id": "1fa4f4e7-c1f1-45fe-b42a-34093ccea3a4",
             "source": {
               "cell": "859de24f-ef56-4269-a51e-d626ea8130d5"
@@ -1553,23 +1496,68 @@
                 "y": -250
               }
             ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            },
             "labels": [
               "Report Data"
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "2. Weiterleitung\nTelefonnummer",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "11fb22e8-f7cd-437e-a7ee-4a897cd4eaaa",
+            "source": {
+              "cell": "0e171091-207d-48a1-a019-487edc52682a"
+            },
+            "target": {
+              "cell": "ebc88767-2bed-409f-b854-efadec206ba8"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": -114
+              },
+              {
+                "x": 1050,
+                "y": -114
+              },
+              {
+                "x": 1100,
+                "y": -90
+              },
+              {
+                "x": 1290,
+                "y": -50
+              }
+            ],
+            "labels": [
+              "2. Weiterleitung\nTelefonnummer"
             ]
           },
           {
@@ -1731,30 +1719,6 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false
-            }
-          },
-          {
-            "position": {
-              "x": 1113,
-              "y": -134
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "2. Weiterleitung\nTelefonnummer"
-              }
-            },
-            "visible": true,
-            "shape": "td-text-block",
-            "id": "116b0e5c-0ea4-4b20-92f4-53a5f334d69f",
-            "zIndex": 15,
-            "data": {
-              "type": "tm.Text",
-              "name": "2. Weiterleitung\nTelefonnummer",
-              "hasOpenThreats": false
             }
           },
           {
