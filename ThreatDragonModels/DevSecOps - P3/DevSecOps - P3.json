@@ -116,7 +116,7 @@
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "Eingangsknotenpunkt angreifbar. Kein timeout und fehlender Sicherheitsmechanismus\nCAPEC - 469\nATTACK-ID T1498\n\n\nD-7\nR-10\nE-5\nA-10\nD-0\nSumme: 6,4",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "System Konfigurieren, um zu häufige Anfragen zu blockieren bzw. einen timeout zu setzen.\nD-7\nR-1\nE-1\nA-10\nD-0\nSumme: 3,8",
                   "modelType": "Generic",
                   "new": false,
                   "number": 109,
@@ -1449,77 +1449,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "1. Auth Challenge",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": true,
-              "threats": [
-                {
-                  "id": "96dae799-8410-4737-9c84-c3454429f502",
-                  "title": "User Spoofing",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Spoofing",
-                  "description": "User gibt sich beim Login als jemand anderes aus.\nCAPEC 151\nATTACK-ID T1566\n\nD-3\nR-2\nE-5\nA-1\nD-10\nSumme: 4,2",
-                  "mitigation": "2fa",
-                  "modelType": "Generic",
-                  "new": false,
-                  "number": 102,
-                  "score": ""
-                }
-              ],
-              "isTrustBoundary": false
-            },
-            "id": "35f9f840-c060-4c31-bf9a-0e17a95ddf66",
-            "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": "Login"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "dec51efb-bf55-4b9c-a294-0e45f4e823f6"
-            },
-            "target": {
-              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
-            },
-            "vertices": [
-              {
-                "x": 237,
-                "y": 39
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "2a. Telefonnummer",
               "description": "",
               "outOfScope": false,
@@ -1648,6 +1577,62 @@
               {
                 "x": 670,
                 "y": 90
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1. Auth Challenge",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [],
+              "isTrustBoundary": false
+            },
+            "id": "35f9f840-c060-4c31-bf9a-0e17a95ddf66",
+            "labels": [
+              {
+                "position": 0.5,
+                "attrs": {
+                  "label": {
+                    "text": "Login"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "dec51efb-bf55-4b9c-a294-0e45f4e823f6"
+            },
+            "target": {
+              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
+            },
+            "vertices": [
+              {
+                "x": 237,
+                "y": 39
               }
             ]
           },
