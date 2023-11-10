@@ -20,6 +20,31 @@
         "cells": [
           {
             "position": {
+              "x": 1356.9999999999989,
+              "y": -261.9999999999986
+            },
+            "size": {
+              "width": 480,
+              "height": 530
+            },
+            "shape": "trust-boundary-box",
+            "attrs": {
+              "headerText": {
+                "text": "Externer Service für \nTelefonnummernauflösung (Telco)"
+              }
+            },
+            "id": "b912fafb-3a4e-4a34-90d4-7b1572a57498",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Externer Service für \nTelefonnummernauflösung (Telco)",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
               "x": 12,
               "y": 53
             },
@@ -127,8 +152,8 @@
           },
           {
             "position": {
-              "x": 890,
-              "y": -47
+              "x": 1410,
+              "y": 22.000000000000064
             },
             "size": {
               "width": 120,
@@ -161,8 +186,8 @@
           },
           {
             "position": {
-              "x": 571,
-              "y": 266
+              "x": 570,
+              "y": 270
             },
             "size": {
               "width": 120,
@@ -199,8 +224,8 @@
           },
           {
             "position": {
-              "x": 1105,
-              "y": -80
+              "x": 1625,
+              "y": -10.999999999999936
             },
             "size": {
               "width": 130,
@@ -541,8 +566,8 @@
             },
             "vertices": [
               {
-                "x": 1055,
-                "y": -40
+                "x": 1575,
+                "y": 29.000000000000064
               }
             ]
           },
@@ -600,8 +625,8 @@
             },
             "vertices": [
               {
-                "x": 1065,
-                "y": 60
+                "x": 1585,
+                "y": 129.00000000000006
               }
             ]
           },
@@ -662,8 +687,16 @@
                 "y": 156
               },
               {
-                "x": 638,
-                "y": -46
+                "x": 860,
+                "y": 0
+              },
+              {
+                "x": 910,
+                "y": -180
+              },
+              {
+                "x": 710,
+                "y": -270
               },
               {
                 "x": 550,
@@ -676,62 +709,6 @@
               {
                 "x": 243,
                 "y": -8
-              }
-            ]
-          },
-          {
-            "shape": "trust-broundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Externer Service für \nTelefonnummernauflösung (Telco)",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            },
-            "id": "e9f48ab7-0723-42ca-a3e4-2be07bb92559",
-            "labels": [
-              "Externer Service für \nTelefonnummernauflösung (Telco)"
-            ],
-            "source": {
-              "x": 846,
-              "y": 54
-            },
-            "target": {
-              "x": 846,
-              "y": 53
-            },
-            "vertices": [
-              {
-                "x": 822,
-                "y": -91
-              },
-              {
-                "x": 822,
-                "y": -130
-              },
-              {
-                "x": 899,
-                "y": -291
-              },
-              {
-                "x": 1162,
-                "y": -291
-              },
-              {
-                "x": 1275,
-                "y": -81
-              },
-              {
-                "x": 1194,
-                "y": 139
-              },
-              {
-                "x": 945,
-                "y": 169
               }
             ]
           },
@@ -788,7 +765,15 @@
                 "y": 394
               },
               {
+                "x": 730,
+                "y": 300
+              },
+              {
                 "x": 710,
+                "y": 266
+              },
+              {
+                "x": 580,
                 "y": 266
               }
             ]
@@ -932,67 +917,8 @@
             },
             "vertices": [
               {
-                "x": 1100,
-                "y": -91
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Antwort",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [],
-              "isTrustBoundary": false
-            },
-            "id": "8ecaba74-0e1f-4520-834c-ddec29220d7e",
-            "labels": [
-              {
-                "position": {
-                  "distance": 0.6100815863762545,
-                  "offset": -21.27058463543483
-                },
-                "attrs": {
-                  "label": {
-                    "text": "2. Weiterleitung\nTelefonnummer"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
-            },
-            "target": {
-              "cell": "ebc88767-2bed-409f-b854-efadec206ba8"
-            },
-            "vertices": [
-              {
-                "x": 760,
-                "y": -10
+                "x": 1620,
+                "y": -21.999999999999936
               }
             ]
           },
@@ -1050,8 +976,12 @@
             },
             "vertices": [
               {
-                "x": 770,
-                "y": 65
+                "x": 1290,
+                "y": 134.00000000000006
+              },
+              {
+                "x": 760,
+                "y": 90
               }
             ]
           },
@@ -1141,6 +1071,102 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "519250ea-49a4-43d4-86ec-e7d3f06ba87d",
+            "source": {
+              "cell": "94f68ce7-aa88-45a4-ba41-c0b62d6a959c"
+            },
+            "target": {
+              "cell": "0e171091-207d-48a1-a019-487edc52682a"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "11fb22e8-f7cd-437e-a7ee-4a897cd4eaaa",
+            "source": {
+              "cell": "0e171091-207d-48a1-a019-487edc52682a"
+            },
+            "target": {
+              "cell": "ebc88767-2bed-409f-b854-efadec206ba8"
+            },
+            "vertices": [
+              {
+                "x": 880,
+                "y": -114
+              },
+              {
+                "x": 1050,
+                "y": -114
+              },
+              {
+                "x": 1100,
+                "y": -90
+              },
+              {
+                "x": 1290,
+                "y": -50
+              }
+            ]
+          },
+          {
             "position": {
               "x": 410,
               "y": -174
@@ -1222,8 +1248,8 @@
           },
           {
             "position": {
-              "x": 965,
-              "y": -240
+              "x": 1485,
+              "y": -170.99999999999994
             },
             "size": {
               "width": 120,
@@ -1262,6 +1288,92 @@
               "protocol": "",
               "isPublicNetwork": false
             }
+          },
+          {
+            "position": {
+              "x": 730,
+              "y": -174
+            },
+            "size": {
+              "width": 110,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Kryptografie"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "0e171091-207d-48a1-a019-487edc52682a",
+            "zIndex": 14,
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 1113,
+              "y": -134
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "2. Weiterleitung\nTelefonnummer"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "116b0e5c-0ea4-4b20-92f4-53a5f334d69f",
+            "zIndex": 15,
+            "data": {
+              "type": "tm.Text",
+              "name": "2. Weiterleitung\nTelefonnummer",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 680,
+              "y": -50
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "2. Weiterleitung\nTelefonnummer"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "7f377531-057b-49c4-8768-69d689586ab9",
+            "data": {
+              "type": "tm.Text",
+              "name": "2. Weiterleitung\nTelefonnummer",
+              "hasOpenThreats": false
+            },
+            "zIndex": 16
           }
         ],
         "version": "2.1.1",
