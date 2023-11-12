@@ -81,7 +81,7 @@
           {
             "position": {
               "x": 270.99999999999994,
-              "y": -10.999999999999936
+              "y": -6.999999999999922
             },
             "size": {
               "width": 130,
@@ -115,7 +115,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Eingangsknotenpunkt angreifbar. Kein timeout und fehlender Sicherheitsmechanismus\nCAPEC - 469\nATTACK-ID T1498\n\n\nD-7\nR-10\nE-5\nA-10\nD-0\nSumme: 6,4",
+                  "description": "Eingangsknotenpunkt angreifbar. Kein timeout und fehlender Sicherheitsmechanismus\nCAPEC - 469 HTTP DoS\nATTACK-ID T1498 Network Denial of Service \n\n\nD-7\nR-10\nE-5\nA-10\nD-0\nSumme: 6,4",
                   "mitigation": "System Konfigurieren, um zu häufige Anfragen zu blockieren bzw. einen timeout zu setzen.\nD-7\nR-1\nE-1\nA-10\nD-0\nSumme: 3,8",
                   "modelType": "Generic",
                   "new": false,
@@ -163,7 +163,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Angreifer setzt seine eigene Telefonnummer ein.\nCAPEC 176\nATTACK-ID T1112\n\nD-10\nR-2\nE-2\nA-10\nD-10\nSumme: 6,8",
+                  "description": "Angreifer setzt seine eigene Telefonnummer ein.\nCAPEC 176 Configuration/Environment Manipulation\nATTACK-ID T1112 Modify Registry \nD-10\nR-2\nE-2\nA-10\nD-10\nSumme: 6,8",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -325,7 +325,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Anfragen an den OTT Service -> Überlastung des Netzwerks\nCAPEC - 486\nATTACK-ID T1498\n\nD-7\nR-10\nE-5\nA-10\nD-0\nSumme: 6,4",
+                  "description": "Anfragen an den OTT Service -> Überlastung des Netzwerks\nCAPEC - 486 UDP Flood\nATTACK-ID T1498 Network Denial of Service \n\nD-7\nR-10\nE-5\nA-10\nD-0\nSumme: 6,4",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -1432,6 +1432,62 @@
             "shape": "flow",
             "attrs": {
               "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "1. Auth Challenge",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": [],
+              "isTrustBoundary": false
+            },
+            "id": "35f9f840-c060-4c31-bf9a-0e17a95ddf66",
+            "labels": [
+              {
+                "position": 0.5,
+                "attrs": {
+                  "label": {
+                    "text": "Login"
+                  }
+                }
+              }
+            ],
+            "source": {
+              "cell": "dec51efb-bf55-4b9c-a294-0e45f4e823f6"
+            },
+            "target": {
+              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
+            },
+            "vertices": [
+              {
+                "x": 237,
+                "y": 39
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
                 "stroke": "red",
                 "strokeWidth": 2.5,
                 "targetMarker": {
@@ -1465,7 +1521,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Fehlende Verschlüsselung erlaubt es Angreifern Daten auszulesen.\nCAPEC - 157\nATTACK-ID T1040\n\nD-7\nR-10\nE-10\nA-10\nD-10\nSumme: 9,4",
+                  "description": "Fehlende Verschlüsselung erlaubt es Angreifern Daten auszulesen.\nCAPEC - 157 Sniffing Attacks\nATTACK-ID T1040 Network Sniffing \n\nD-7\nR-10\nE-10\nA-10\nD-10\nSumme: 9,4",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -1492,7 +1548,12 @@
             "target": {
               "cell": "fd7303e8-29d2-4d76-bf7d-87eb619ede69"
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 600,
+                "y": 210
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1581,62 +1642,6 @@
             ]
           },
           {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "1. Auth Challenge",
-              "description": "",
-              "outOfScope": false,
-              "isBidirectional": false,
-              "reasonOutOfScope": "",
-              "protocol": "",
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "hasOpenThreats": false,
-              "threats": [],
-              "isTrustBoundary": false
-            },
-            "id": "35f9f840-c060-4c31-bf9a-0e17a95ddf66",
-            "labels": [
-              {
-                "position": 0.5,
-                "attrs": {
-                  "label": {
-                    "text": "Login"
-                  }
-                }
-              }
-            ],
-            "source": {
-              "cell": "dec51efb-bf55-4b9c-a294-0e45f4e823f6"
-            },
-            "target": {
-              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
-            },
-            "vertices": [
-              {
-                "x": 237,
-                "y": 39
-              }
-            ]
-          },
-          {
             "position": {
               "x": 400.99999999999994,
               "y": -170.99999999999994
@@ -1682,7 +1687,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Angreifer manipuliert Log-Daten\nCAPEC 165\nATTACK-ID T1565\n\nD-8\nR-1\nE-1\nA-10\nD-10\nSumme: 6",
+                  "description": "Angreifer manipuliert Log-Daten\nCAPEC 165 File Manipulation\nATTACK-ID T1565 Data Manipulation \n\nD-8\nR-1\nE-1\nA-10\nD-10\nSumme: 6",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -1813,7 +1818,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Information disclosure",
-                  "description": "Durch Nutzung schwacher Algorithmen können Daten wieder entschlüsselt werden.\nCAPEC - 97\nATTACK-ID T1600\n\nD-10\nR-1\nE-2\nA-10\nD-10\nSumme: 6,6",
+                  "description": "Durch Nutzung schwacher Algorithmen können Daten wieder entschlüsselt werden.\nCAPEC - 97 Cryptanalysis\nATTACK-ID T1600 Weaken Encryption \n\nD-10\nR-1\nE-2\nA-10\nD-10\nSumme: 6,6",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -1889,7 +1894,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "Angreifer manipuliert Daten vor Signatur. Durch fehlende Überwachung nicht zuweisbar wer es war.\nATTACK-ID T1132\nCAPEC 217\n\nD-8\nR-5\nE-6\nA-5\nD-10\nSumme: 5,6\nSumme: 6,6",
+                  "description": "Angreifer manipuliert Daten vor Signatur. Durch fehlende Überwachung nicht zuweisbar wer es war.\nCAPEC 217 Exploiting Incorrectly Configured SSL/TLS\nATTACK-ID T1132 Data Encoding \n\nD-8\nR-5\nE-6\nA-5\nD-10\nSumme: 5,6\nSumme: 6,6",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -2003,7 +2008,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
-                  "description": "Angreifer verschafft sich Zugang zur Überwachungssoftware.\nCAPEC - 633\nATTACK-ID T1134\n\nD-8\nR-1\nE-1\nA-10\nD-10\nSumme: 6",
+                  "description": "Angreifer verschafft sich Zugang zur Überwachungssoftware.\nCAPEC - 633 Token Impersonation\nATTACK-ID T1134 Access Token Manipulation \n\nD-8\nR-1\nE-1\nA-10\nD-10\nSumme: 6",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
@@ -2059,7 +2064,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Angreifer manipuliert Daten des SIEM.\nCAPEC 165\nATTACK-ID T1565\n\n\nD-8\nR-1\nE-1\nA-10\nD-10\nSumme: 6",
+                  "description": "Angreifer manipuliert Daten des SIEM.\nCAPEC 165 File Manipulation\nATTACK-ID T1565 Data Manipulation \n\n\nD-8\nR-1\nE-1\nA-10\nD-10\nSumme: 6",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "Generic",
                   "new": false,
