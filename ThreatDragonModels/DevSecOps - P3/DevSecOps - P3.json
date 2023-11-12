@@ -81,7 +81,7 @@
           {
             "position": {
               "x": 270.99999999999994,
-              "y": -6.999999999999922
+              "y": 3
             },
             "size": {
               "width": 130,
@@ -92,8 +92,8 @@
                 "text": "Login System -\nWebapp +\nMobile App"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -112,18 +112,18 @@
                 {
                   "id": "b3e38570-7d41-4010-a6ff-0f72845d6929",
                   "title": "DDOS",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Eingangsknotenpunkt angreifbar. Kein timeout und fehlender Sicherheitsmechanismus\nCAPEC - 469 HTTP DoS\nATTACK-ID T1498 Network Denial of Service \n\n\nD-7\nR-10\nE-5\nA-10\nD-0\nSumme: 6,4",
-                  "mitigation": "System Konfigurieren, um zu häufige Anfragen zu blockieren bzw. einen timeout zu setzen.\nD-7\nR-1\nE-1\nA-10\nD-0\nSumme: 3,8",
+                  "description": "Eingangsknotenpunkt angreifbar. Kein timeout und fehlender Sicherheitsmechanismus\nCAPEC - 469 HTTP DoS\nATTACK-ID T1498 Network Denial of Service \n\nD-7\nR-10\nE-5\nA-10\nD-0\nSumme: 6,4",
+                  "mitigation": "DEFEND-ID D3-CAA Connection Attempt Analysis\nASVS 11.1.4 Business Logic Security\nGegenmaßnahme: Automatische Erkennung von exzessiven Anfragen und dementsprechend Zugriff beschränken. \nD-7\nR-1\nE-1\nA-10\nD-0\nSumme: 3,8",
                   "modelType": "Generic",
                   "new": false,
                   "number": 109,
-                  "score": ""
+                  "score": "3,8"
                 }
               ],
-              "hasOpenThreats": true
+              "hasOpenThreats": false
             }
           },
           {
@@ -140,8 +140,8 @@
                 "text": "2-Faktor-Authe\nntifizierungsdi\nenst"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -160,18 +160,18 @@
                 {
                   "id": "db235f4f-e4cb-47a6-b213-abda51d309fa",
                   "title": "Manipulation der Telefonnumer",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Angreifer setzt seine eigene Telefonnummer ein.\nCAPEC 176 Configuration/Environment Manipulation\nATTACK-ID T1112 Modify Registry \nD-10\nR-2\nE-2\nA-10\nD-10\nSumme: 6,8",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Gegenmaßnahme: Datenintegrität durch message authentication sichern.\nDEFEND-ID D3-MAN Message Authentication\nASVA V1.8 Data Protection and Privacy Architecture\nD-10\nR-0\nE-0\nA-10\nD-1\nSumme:4,2",
                   "modelType": "Generic",
                   "new": false,
                   "number": 112,
-                  "score": ""
+                  "score": "4,2"
                 }
               ],
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -302,8 +302,8 @@
                 "text": "Own Mobile\nPhone OTT\nService"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -322,18 +322,18 @@
                 {
                   "id": "4d1d7797-202e-4d77-8c81-056e0f795ae3",
                   "title": "DDOS",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Anfragen an den OTT Service -> Überlastung des Netzwerks\nCAPEC - 486 UDP Flood\nATTACK-ID T1498 Network Denial of Service \n\nD-7\nR-10\nE-5\nA-10\nD-0\nSumme: 6,4",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Anfragen an den OTT Service -> Überlastung des Netzwerks\nCAPEC - 486 UDP Flood\nATTACK-ID T1498 Network Denial of Service \nDEFEND-ID D3-CAA Connection Attempt Analysis\nASVS 11.1.4 Business Logic Security\nGegenmaßnahme: Automatische Erkennung von exzessiven Anfragen und dementsprechend Zugriff beschränken. \n\nD-7\nR-10\nE-5\nA-10\nD-0\nSumme: 6,4",
+                  "mitigation": "DEFEND-ID D3-CAA Connection Attempt Analysis\nASVS 11.1.4 Business Logic Security\nGegenmaßnahme: Automatische Erkennung von exzessiven Anfragen und dementsprechend Zugriff beschränken. \nD-7\nR-1\nE-1\nA-10\nD-0\nSumme: 3,8\n",
                   "modelType": "Generic",
                   "new": false,
                   "number": 114,
-                  "score": ""
+                  "score": "3,8"
                 }
               ],
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -623,6 +623,10 @@
               },
               {
                 "x": 420,
+                "y": 260
+              },
+              {
+                "x": 610,
                 "y": 260
               },
               {
@@ -1488,8 +1492,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1513,20 +1516,20 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "1fa137a7-81f6-4fbf-a7a8-f5b2f76dabe1",
                   "title": "Auslesen der Telefonnummern",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Fehlende Verschlüsselung erlaubt es Angreifern Daten auszulesen.\nCAPEC - 157 Sniffing Attacks\nATTACK-ID T1040 Network Sniffing \n\nD-7\nR-10\nE-10\nA-10\nD-10\nSumme: 9,4",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Gegenmaßnahme: Datenverkehr verschlüsseln.\nDEFEND-ID D3-MENCR Message Encryption\nASVA V1.9 Communications Architecture\nD-7\nR-1\nE-1\nA-10\nD-10\nSumme: 5,8",
                   "modelType": "Generic",
                   "new": false,
                   "number": 108,
-                  "score": ""
+                  "score": "5,8"
                 }
               ],
               "isTrustBoundary": false
@@ -1559,8 +1562,7 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1584,20 +1586,20 @@
               "protocol": "",
               "isEncrypted": false,
               "isPublicNetwork": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "6dd117e1-26ca-4cf5-be9c-90f0e3144f5e",
                   "title": "Phone number spoofing",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Spoofing",
-                  "description": "Angreifer tauscht nummer gegen seine eigene aus.\nCAPEC - 275 DNS Rebind \n-> Umleitung auf eigene Server.\nATTACK-ID T1590.002 Gather Victim Network Information: DNS\nMitigation: M1056\n\nD-10\nR-2\nE-2\nA-10\nD-10\nSumme: 6,8\n\nD-\nR\nE\nA\nD\nSumme:",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Angreifer tauscht nummer gegen seine eigene aus.\nCAPEC - 275 DNS Rebind \n-> Umleitung auf eigene Server.\nATTACK-ID T1590.002 Gather Victim Network Information: DNS\nMitigation: M1056\n\nD-10\nR-2\nE-2\nA-10\nD-10\nSumme: 6,8",
+                  "mitigation": "Gegenmaßnahme: Analyse der Metadaten von Domänennamen, einschließlich Namen und DNS-Einträgen, um festzustellen, ob die Domäne wahrscheinlich zu einem unerwünschten Host aufgelöst wird.\nDEFEND-ID D3-DNSTA DNS Traffic Analysis\nASVA V10.3 Application Integrity\nD-10\nR-0\nE-1\nA-10\nD-2\nSumme: 4,6",
                   "modelType": "Generic",
                   "new": false,
                   "number": 103,
-                  "score": ""
+                  "score": "4,6"
                 }
               ],
               "isTrustBoundary": false
@@ -1655,13 +1657,11 @@
                 "text": "Log-DB"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1679,20 +1679,20 @@
               "storesCredentials": false,
               "isEncrypted": true,
               "isSigned": true,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "44b6b273-5aec-4cbe-b015-15062c140786",
                   "title": "Log Tampering",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Angreifer manipuliert Log-Daten\nCAPEC 165 File Manipulation\nATTACK-ID T1565 Data Manipulation \n\nD-8\nR-1\nE-1\nA-10\nD-10\nSumme: 6",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Gegenmaßnahme: Logging jeglicher Vorgänge inklusive regelmäßigem hashing. Zusätzlich stark eingeschränkte Zugriffsrechte.\nDEFEND-ID D3-FIM File Integrity Monitoring\nASVA V8.3 Sensitive Private Data\nD-8\nR-1\nE-1\nA-10\nD-0\nSumme: 4",
                   "modelType": "Generic",
                   "new": false,
                   "number": 104,
-                  "score": ""
+                  "score": "4"
                 }
               ]
             }
@@ -1794,8 +1794,8 @@
                 "text": "Kryptografie"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1810,20 +1810,20 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "ea7c93c7-31f9-4823-9b03-7d1822bcd744",
                   "title": "Schwache Algorithmen",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Durch Nutzung schwacher Algorithmen können Daten wieder entschlüsselt werden.\nCAPEC - 97 Cryptanalysis\nATTACK-ID T1600 Weaken Encryption \n\nD-10\nR-1\nE-2\nA-10\nD-10\nSumme: 6,6",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Gegenmaßnahme: Nutzung sicherer kryptografischer Verfahren. \nDEFEND-ID D3-MENCR Message Encryption\nASVA V6.2 Algorithms\nD-10\nR-0\nE-0\nA-10\nD-10\nSumme: 6",
                   "modelType": "Generic",
                   "new": false,
                   "number": 115,
-                  "score": ""
+                  "score": "6"
                 }
               ],
               "isBidirectional": false,
@@ -1870,8 +1870,8 @@
                 "text": "Export Service"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1886,20 +1886,20 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "52eceee9-e381-43fc-ae34-f0f4446ae379",
                   "title": "Manipulation der Report Daten",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "Angreifer manipuliert Daten vor Signatur. Durch fehlende Überwachung nicht zuweisbar wer es war.\nCAPEC 217 Exploiting Incorrectly Configured SSL/TLS\nATTACK-ID T1132 Data Encoding \n\nD-8\nR-5\nE-6\nA-5\nD-10\nSumme: 5,6\nSumme: 6,6",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Angreifer manipuliert Daten vor Signatur. Durch fehlende Überwachung nicht zuweisbar wer es war.\nCAPEC 217 Exploiting Incorrectly Configured SSL/TLS\nATTACK-ID T1132 Data Encoding \n\nD-8\nR-5\nE-6\nA-5\nD-10\nSumme: 6,8",
+                  "mitigation": "Gegenmaßnahme: Das Pinning ermöglicht es, eine vertrauenswürdige Kopie eines Zertifikats oder öffentlichen Schlüssels mit einem Server zu verknüpfen und so die Wahrscheinlichkeit zu verringern, dass häufig besuchte Websites Gegenstand von Man-in-the-Middle-Angriffen werden. \nDEFEND-ID D3-CP Certificate Pinning\nASVA V1.9 Communications Architecture\nD-8\nR-1\nE-1\nA-5\nD-2\nSumme: 3,4",
                   "modelType": "Generic",
                   "new": false,
                   "number": 107,
-                  "score": ""
+                  "score": "3,4"
                 }
               ],
               "isBidirectional": false,
@@ -1984,8 +1984,8 @@
                 "text": "SIEM"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -2000,20 +2000,20 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "privilegeLevel": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "1da7ac23-6b14-4b23-b54d-7e43c58fd1df",
                   "title": "Zugang Siem",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Elevation of privilege",
-                  "description": "Angreifer verschafft sich Zugang zur Überwachungssoftware.\nCAPEC - 633 Token Impersonation\nATTACK-ID T1134 Access Token Manipulation \n\nD-8\nR-1\nE-1\nA-10\nD-10\nSumme: 6",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Angreifer verschafft sich Zugang zur Überwachungssoftware.\nCAPEC - 633 Token Impersonation\nATTACK-ID T1134 Access Token Manipulation \n\nD-8\nR-5\nE-5\nA-10\nD-10\nSumme: 7,6",
+                  "mitigation": "Gegenmaßnahme: Authentifizierung über mehrere Faktoren, sodass ein gestohlener oder manipulierter Token alleine nicht mehr ausreicht. \nDEFEND-ID D3-MFA Multi-factor Authentication\nASVA V2.10 Service Authentication\nD-8\nR-1\nE-1\nA-10\nD-5\nSumme: 5",
                   "modelType": "Generic",
                   "new": false,
                   "number": 110,
-                  "score": ""
+                  "score": "5"
                 }
               ]
             }
@@ -2032,13 +2032,11 @@
                 "text": "Siem Daten"
               },
               "topLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -2056,20 +2054,20 @@
               "storesCredentials": false,
               "isEncrypted": false,
               "isSigned": false,
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "threats": [
                 {
                   "id": "a00f56a1-6f97-4c84-b8e0-0751b1d67c82",
                   "title": "Siem-Daten Tampering",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Tampering",
-                  "description": "Angreifer manipuliert Daten des SIEM.\nCAPEC 165 File Manipulation\nATTACK-ID T1565 Data Manipulation \n\n\nD-8\nR-1\nE-1\nA-10\nD-10\nSumme: 6",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Angreifer manipuliert Daten des SIEM.\nCAPEC 165 File Manipulation\nATTACK-ID T1565 Data Manipulation \nD-8\nR-1\nE-1\nA-10\nD-10\nSumme: 6",
+                  "mitigation": "Gegenmaßnahme: Logging jeglicher Vorgänge inklusive regelmäßigem hashing. Zusätzlich stark eingeschränkte Zugriffsrechte.\nDEFEND-ID D3-FIM File Integrity Monitoring\nASVA V8.3 Sensitive Private Data\nD-8\nR-1\nE-1\nA-10\nD-0\nSumme: 4",
                   "modelType": "Generic",
                   "new": false,
                   "number": 105,
-                  "score": ""
+                  "score": "4"
                 }
               ],
               "isBidirectional": false,
